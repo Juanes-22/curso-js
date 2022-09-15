@@ -87,8 +87,7 @@ function registro() {
     let duracion = null;
 
     while (true) {
-        username = prompt("Ingrese un nombre de usuario de menos de 8 caracteres:"
-        );
+        username = prompt("Ingrese un nombre de usuario de menos de 8 caracteres:");
 
         if (username != null && username.length <= 8) {
             break;
@@ -219,10 +218,7 @@ function calcularRutinas() {
         duracionRutina = duracionRutina1;
         dificultadRutina = dificultadRutina1;
         musculosRutina = musculosRutina1;
-    } else if (
-        duracionUsuario >= 25 &&
-        duracionUsuario < 40 &&
-        nivelUsuario == "Intermedio"
+    } else if (duracionUsuario >= 25 && duracionUsuario < 40 && nivelUsuario == "Intermedio"
     ) {
         // acá habría un for que verificaría cada rutina del array de objetos y llenaria un array de rutinas recomendadas
         nombreRutina = nombreRutina2;
