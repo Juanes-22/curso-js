@@ -7,10 +7,10 @@ export default class WorkoutGenerator {
         this.root = root;
         this.root.innerHTML = WorkoutGenerator.getHTML();
 
+        this.ejercicios = [];
         this.entries = [];
-        this.nonDuplicatesEntries = [];
 
-        this.ejercicios = ejercicios;
+        this.saveEjercicios(ejercicios);
         this.renderEjercicios();
 
         this.loadEntries();
@@ -74,6 +74,18 @@ export default class WorkoutGenerator {
         `;
     }
 
+    saveEjercicios(ejerciciosToSave) {
+        for (const ejercicioToSave of ejerciciosToSave) {
+            const existing = this.ejercicios.find((ejercicio) => {
+                return ejercicio.nombre == ejercicioToSave.nombre;
+            });
+
+            if (!existing) {
+                this.ejercicios.push(ejercicioToSave);
+            }
+        }
+    }
+
     renderEjercicios() {
         const ejerciciosDOM = document.querySelector("#ejercicios");
 
@@ -87,6 +99,7 @@ export default class WorkoutGenerator {
     renderRutina() {
         const rutinaDOM = document.querySelector("#rutina__entries");
 
+        // funcion que renderiza item de rutina
         const renderListItemRutina = (entry) => {
             const template = document.createElement("template");
             let listItemRutina = null;
@@ -110,7 +123,7 @@ export default class WorkoutGenerator {
 
                 inputCantidad.addEventListener("blur", (e) => {
                     inputCantidad.disabled = true;
-                    entry.cantidad = e.target.value;
+                    entry.cantidad = Number(e.target.value);
                     this.saveEntries();
                 });
             });
@@ -131,7 +144,7 @@ export default class WorkoutGenerator {
         });
 
         // renderiza todas las entries
-        this.nonDuplicatesEntries.forEach((entry) => {
+        this.entries.forEach((entry) => {
             renderListItemRutina(entry);
         });
     }
@@ -139,30 +152,31 @@ export default class WorkoutGenerator {
     loadEntries() {
         const entriesJSON = localStorage.getItem(WorkoutGenerator.LOCAL_STORAGE_DATA_KEY) || "[]";
         this.entries = JSON.parse(entriesJSON);
-        this.updateNonDuplicatesEntries();
-    }
-
-    updateNonDuplicatesEntries() {
-        this.nonDuplicatesEntries = [...new Set(this.entries)];
-
-        this.nonDuplicatesEntries.forEach((noDuplicateEntry) => {
-            // cuenta el numero de veces que se repite la entry
-            noDuplicateEntry.cantidad = this.entries.reduce((total, entry) => {
-                return noDuplicateEntry.id === entry.id ? (total += 1) : total;
-            }, 0);
-        });
     }
 
     saveEntries() {
-        this.updateNonDuplicatesEntries();
-        localStorage.setItem(WorkoutGenerator.LOCAL_STORAGE_DATA_KEY, JSON.stringify(this.nonDuplicatesEntries));
+        console.table(this.entries);
+        localStorage.setItem(WorkoutGenerator.LOCAL_STORAGE_DATA_KEY, JSON.stringify(this.entries));
     }
 
     addEntry(id) {
+        // verifica que exista en los ejercicios disponibles
         const newEntry = this.ejercicios.find((ejercicio) => id == ejercicio.id);
 
         if (newEntry) {
-            this.entries.push(newEntry);
+            const existingEntry = this.entries.find((entry) => {
+                return newEntry.id == entry.id;
+            });
+
+            if (existingEntry) {
+                if (existingEntry.cantidad < 10) {
+                    existingEntry.cantidad += 1;
+                }
+            } else {
+                newEntry.cantidad = 1;
+                this.entries.push(newEntry);
+            }
+
             this.saveEntries();
             this.renderRutina();
         }

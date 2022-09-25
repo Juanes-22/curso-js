@@ -39,7 +39,7 @@ export default class Ejercicio {
         for (let i = 0; i < this.dificultad; i++) {
             const iconClonado = icon.cloneNode(true);
 
-            cardStatsList.appendChild(iconClonado)
+            cardStatsList.appendChild(iconClonado);
         }
 
         return card;
