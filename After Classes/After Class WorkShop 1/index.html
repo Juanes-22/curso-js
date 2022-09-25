@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+            crossorigin="anonymous"
+        />
+        <title>AFTER</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- Items -->
+                <section id="items" class="col-sm-8 row"></section>
+
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <ul id="carrito" class="list-group">
+                        <li class="list-group-item text-right mx-2">
+                            A second item
+                            <button class="btn btn-dark mx-5">-</button>                            
+                        </li>
+                        <li class="list-group-item text-right mx-2">
+                            A second item
+                            <button class="btn btn-dark mx-5">-</button>                            
+                        </li>
+                    </ul>
+                    <p class="text-right">Total: $<span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn-danger">Vaciar</button>
+                </aside>
+            </div>
+        </div>
+
+        <script src="./app2.js"></script>
+    </body>
+</html>

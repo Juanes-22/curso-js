@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(35, 37, 39);
+    color:  midnightblue;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(43, 213, 182);
+    font-size: 4vw;
+}
+
+section {
+    width: 90%;
+}
+
+div.product-card {
+    width: 30%;
+    height: 20vh;
+    margin: 2%;
+
+    text-align: center;
+
+    background-color: coral;
+}

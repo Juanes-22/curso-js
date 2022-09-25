@@ -1,0 +1,144 @@
+{
+    "customer": {
+        "data_id": 1663633072
+    },
+    "cart": {
+        "summary_count": 4,
+        "subtotalAmount": 528000,
+        "subtotal": "<span class=\"price\">$528.000</span>",
+        "possible_onepage_checkout": true,
+        "items": [
+            {
+                "product_name_item": "Jean",
+                "product_color_item": false,
+                "product_type": "configurable",
+                "options": [
+                    {
+                        "label": "Talla",
+                        "value": "L",
+                        "option_id": 133,
+                        "option_value": "26"
+                    }
+                ],
+                "qty": 1,
+                "item_id": "17876899",
+                "configure_url": "https://www.mattelsa.net/checkout/cart/configure/id/17876899/product_id/111654/",
+                "is_visible_in_site_visibility": true,
+                "product_id": "111654",
+                "product_name": "Jeans skinny fit azul medio cuchilla",
+                "product_sku": "59825&L",
+                "product_url": "https://www.mattelsa.net/jeans-skinny-fit-azul-medio-cuchilla-59825",
+                "product_has_url": true,
+                "product_price": "\n    <span class=\"price-including-tax\" data-label=\"Incl.&#x20;Tax\">\n            <span class=\"minicart-price\">\n            <span class=\"price\">$94.000</span>        </span>\n\n        </span>\n\n",
+                "product_price_value": "94000.0000",
+                "product_image": {
+                    "src": "https://www.mattelsa.net/media/catalog/product/cache/a02d32a7522bff772940f1d267bc0ba7/5/9/59825-1.jpg",
+                    "alt": "Jeans skinny fit azul medio cuchilla",
+                    "width": 200,
+                    "height": 230
+                },
+                "canApplyMsrp": false
+            },
+            {
+                "product_name_item": "Camiseta",
+                "product_color_item": "Blanco",
+                "product_type": "configurable",
+                "options": [
+                    {
+                        "label": "Talla",
+                        "value": "M",
+                        "option_id": 133,
+                        "option_value": "25"
+                    }
+                ],
+                "qty": 4,
+                "item_id": "17876897",
+                "configure_url": "https://www.mattelsa.net/checkout/cart/configure/id/17876897/product_id/111714/",
+                "is_visible_in_site_visibility": true,
+                "product_id": "111714",
+                "product_name": "Camiseta blanco básico",
+                "product_sku": "66316&M",
+                "product_url": "https://www.mattelsa.net/camiseta-blanco-basico-66316",
+                "product_has_url": true,
+                "product_price": "\n    <span class=\"price-including-tax\" data-label=\"Incl.&#x20;Tax\">\n            <span class=\"minicart-price\">\n            <span class=\"price\">$44.000</span>        </span>\n\n        </span>\n\n",
+                "product_price_value": "44000.0000",
+                "product_image": {
+                    "src": "https://www.mattelsa.net/media/catalog/product/cache/a02d32a7522bff772940f1d267bc0ba7/6/6/66316-1.jpg",
+                    "alt": "Camiseta blanco básico",
+                    "width": 200,
+                    "height": 230
+                },
+                "canApplyMsrp": false
+            },
+            {
+                "product_name_item": "Camiseta",
+                "product_color_item": "Negro",
+                "product_type": "configurable",
+                "options": [
+                    {
+                        "label": "Talla",
+                        "value": "M",
+                        "option_id": 133,
+                        "option_value": "25"
+                    }
+                ],
+                "qty": 3,
+                "item_id": "17876895",
+                "configure_url": "https://www.mattelsa.net/checkout/cart/configure/id/17876895/product_id/111448/",
+                "is_visible_in_site_visibility": true,
+                "product_id": "111448",
+                "product_name": "Camiseta amor y amistad negro ilustración",
+                "product_sku": "66071&M",
+                "product_url": "https://www.mattelsa.net/camiseta-negro-ilustracion-66071",
+                "product_has_url": true,
+                "product_price": "\n    <span class=\"price-including-tax\" data-label=\"Incl.&#x20;Tax\">\n            <span class=\"minicart-price\">\n            <span class=\"price\">$52.000</span>        </span>\n\n        </span>\n\n",
+                "product_price_value": "52000.0000",
+                "product_image": {
+                    "src": "https://www.mattelsa.net/media/catalog/product/cache/a02d32a7522bff772940f1d267bc0ba7/6/6/66071-1.jpg",
+                    "alt": "Camiseta amor y amistad negro ilustración",
+                    "width": 200,
+                    "height": 230
+                },
+                "canApplyMsrp": false
+            },
+            {
+                "product_name_item": "Pantalón",
+                "product_color_item": false,
+                "product_type": "configurable",
+                "options": [
+                    {
+                        "label": "Talla",
+                        "value": "L",
+                        "option_id": 133,
+                        "option_value": "26"
+                    }
+                ],
+                "qty": 1,
+                "item_id": "17876893",
+                "configure_url": "https://www.mattelsa.net/checkout/cart/configure/id/17876893/product_id/111444/",
+                "is_visible_in_site_visibility": true,
+                "product_id": "111444",
+                "product_name": "Jogg pants café básico",
+                "product_sku": "65978&L",
+                "product_url": "https://www.mattelsa.net/jogg-pants-cafe-basico-65978",
+                "product_has_url": true,
+                "product_price": "\n    <span class=\"price-including-tax\" data-label=\"Incl.&#x20;Tax\">\n            <span class=\"minicart-price\">\n            <span class=\"price\">$102.000</span>        </span>\n\n        </span>\n\n",
+                "product_price_value": "102000.0000",
+                "product_image": {
+                    "src": "https://www.mattelsa.net/media/catalog/product/cache/a02d32a7522bff772940f1d267bc0ba7/6/5/65978-1.jpg",
+                    "alt": "Jogg pants café básico",
+                    "width": 200,
+                    "height": 230
+                },
+                "canApplyMsrp": false
+            }
+        ],
+        "extra_actions": "",
+        "isGuestCheckoutAllowed": false,
+        "website_id": "1",
+        "storeId": "1",
+        "subtotal_incl_tax": "<span class=\"price\">$528.000</span>",
+        "subtotal_excl_tax": "<span class=\"price\">$528.000</span>",
+        "data_id": 1663633072
+    }
+}
