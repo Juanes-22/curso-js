@@ -1,0 +1,17 @@
+{
+  "name": "clase-16---node-js",
+  "version": "1.0.0",
+  "description": "archivo de muestra",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Juan Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^3.0.4"
+  }
+}

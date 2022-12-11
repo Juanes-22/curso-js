@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #e0e0e0;
+    color: #1d1d1d;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.container .movie {
+    text-align: center;
+    transition: all ease-out 0.2s;
+}
+
+.container .movie:hover {
+    transform: scale(1.05);
+}
+
+.container .movie__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container .movie__poster {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all ease-out 0.2s;
+}
+
+.container .movie__poster:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.pagination {
+    position: fixed;
+    bottom: 0;
+    background: #100a1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.pagination__btn {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: #241744;
+    color: #fff;
+    border-radius: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease all;
+}
+
+.pagination__btn:hover {
+    background: #137c32;
+}

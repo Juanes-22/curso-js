@@ -53,7 +53,7 @@ inputNombre.addEventListener("input", () => {
 });
 */
 
-/*
+
 inputNombre.addEventListener("input", (e) => {
     //console.log(e.data);
     console.log(e.target.value);
@@ -62,7 +62,7 @@ inputNombre.addEventListener("input", (e) => {
         console.log("Vacío");
     }
 });
-*/
+
 
 /*
 inputNombre.addEventListener("blur", (e) => {
